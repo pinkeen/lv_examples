@@ -13,10 +13,10 @@ Similarly to `lv_conf.h` there is a configuration file for the examples too. It 
 3. Change the first `#if 0` to `#if 1` to enable the file's content
 4. Enable or Disable modules
 
-### Extra LVGL configuration to run the demos
+### Adjust LVGL configuration for the demos
 
-You may need to adjust `lv_conf.h` settings for certain examples to compile -
-e.g. the printer demo requires additional font sizes:
+You may need to [adjust your project's `lv_conf.h` settings](https://docs.lvgl.io/latest/en/html/get-started/quick-overview.html#add-lvgl-into-your-project) for certain
+examples to compile - e.g. the printer demo requires additional font sizes:
 
 ```c
 #define LV_FONT_MONTSERRAT_22 1
@@ -24,14 +24,14 @@ e.g. the printer demo requires additional font sizes:
 #define LV_FONT_MONTSERRAT_32 1
 ```
 
-Refer to `lv_conf_template.h` if in doubt.
+Refer to [`lv_conf_template.h`](https://github.com/lvgl/lvgl/blob/master/lv_conf_template.h) if in doubt.
 
 ## Examples
 
 ### Get strated
 If you are new to LVGL check these examples first. They demonstrate the basic mechanisms of the library.
 See the [lv_ex_get_started](https://github.com/lvgl/lv_examples/tree/master/src/lv_ex_get_started) folder.
-You can also take a look at the [Quich overview](https://docs.lvgl.io/v7/en/html/get-started/quick-overview.html) of LVGL to learn the basics.
+You can also take a look at the [Quick overview](https://docs.lvgl.io/v7/en/html/get-started/quick-overview.html) of LVGL to learn the basics.
 
 ### Styles
 LVGL has a powerful and versatile style system. These examples show how to use the most common style properties, e.g. styling rectangles, shadows, images, lines, transitions and so on. See the [lv_ex_style](https://github.com/lvgl/lv_examples/tree/master/src/lv_ex_style) folder.
