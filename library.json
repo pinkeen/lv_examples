@@ -8,6 +8,8 @@
         "url": "https://github.com/lvgl/lv_examples.git"
     },
     "build": {
+        "srcDir": ".",
+        "srcFilter": "-<*> +<src> +<assets>",
         "includeDir": "."
     },
     "license": "MIT",
